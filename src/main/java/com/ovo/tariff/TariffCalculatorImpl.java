@@ -68,6 +68,11 @@ public class TariffCalculatorImpl implements TariffCalculator{
         return 12*(monthlySpend/netChargesPerKWH);
     }
 
+    /**
+     * Load the tariffs prices file.
+     *
+     * @return All the tariffs
+     */
     private Map<String, Tariff> loadJsonFile(){
         JSONParser parser = new JSONParser();
         Map<String, Tariff> tariffs = new HashMap<>();

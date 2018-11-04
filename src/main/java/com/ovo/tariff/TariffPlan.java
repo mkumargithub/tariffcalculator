@@ -3,9 +3,9 @@ package com.ovo.tariff;
 import java.util.Objects;
 
 public class TariffPlan {
-    private String fuel_type;
-    private double tariff_charges;
-    private double standing_charges;
+    private String fuel_type; // Fuel type
+    private double tariff_charges; // Tariff cost
+    private double standing_charges; // Standing Charges
 
     public String getFuel_type() {
         return fuel_type;

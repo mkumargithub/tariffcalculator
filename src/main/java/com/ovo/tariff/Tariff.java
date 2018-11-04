@@ -4,13 +4,11 @@ import java.util.Objects;
 
 public class Tariff {
 
-    private TariffPlan gasTariff;
-    private TariffPlan powerTariff;
+    private TariffPlan gasTariff; // Gas tariff
+    private TariffPlan powerTariff; // Power tariff
 
     /**
-     *
-     * @param o
-     * @return
+     * Equals method
      */
     @Override
     public boolean equals(Object o) {
@@ -22,8 +20,7 @@ public class Tariff {
     }
 
     /**
-     *
-     * @return
+     * Hash code method
      */
     @Override
     public int hashCode() {

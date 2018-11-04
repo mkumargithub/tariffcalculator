@@ -149,3 +149,48 @@ Manishs-iMac:tariffcalculator manish$ mvn clean compile assembly:single
 Manishs-iMac:tariffcalculator manish$ 
 ```
 
+# How to run through a Jar file:
+- follow the below steps to run the jar file
+  - Download the jar file `tariffcalculator-1.0-OVOTEST-jar-with-dependencies.jar` from the target location to your local drive.
+  - Download the `prices.json` file from target location to your local drive.
+  - now run the below command from cli / command line / terminal
+        `java -jar tariffcalculator-1.0-OVOTEST-jar-with-dependencies.jar`
+
+## Console Result:
+```
+Manishs-iMac:target manish$ java -jar tariffcalculator-1.0-OVOTEST-jar-with-dependencies.jar
+Enter power usage in kHw (EX: 100) :
+1
+Enter gas usage in kWH (EX: 100) :
+1
+Displaying the tariff charges per plan in ascending order.
+TARIFF_NAME : tariff3 COST : 8.50
+TARIFF_NAME : tariff1 COST : 35.70
+TARIFF_NAME : tariff2 COST : 47.25
+---------------------------- Command2----------------------------
+Please Enter Fuel Type (EX: gas | power) :
+gas
+Please Enter Tariff Name (EX:tariff1 | tariff2 | tariff3) :
+tariff1
+Please Enter Your Monthly Spending Amount (EX: 100 | 100.00) :
+100
+Your Total Annual Consumption in kWh  :  99.38
+Manishs-iMac:target manish$
+
+```
+
+# Commands used in this Project
+#### Maven Command
+`$ mvn clean install`
+`$ mvn clean compile assembly:single`
+
+####  Git Commands:
+```
+$ git clone git@github.com:mkumargithub/tariffcalculator.git
+$ git status
+$ git add *
+$ git commit -m <Comment>
+$ git push
+```
+####  To run jar file standalone
+`java -jar tariffcalculator-1.0-OVOTEST-jar-with-dependencies.jar`

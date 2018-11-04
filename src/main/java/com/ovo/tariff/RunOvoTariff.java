@@ -12,10 +12,10 @@ public class RunOvoTariff {
         String tariffName;
         double monthlySpentLimit;
         try{
-            System.out.println("Enter power usage: ");
+            System.out.println("Enter power usage in kHw (EX: 100) : ");
             Scanner scanner = new Scanner(System.in);
             powerUsage  = Integer.parseInt(scanner.nextLine());
-            System.out.println("Enter gas usage:");
+            System.out.println("Enter gas usage in kWH (EX: 100) :");
             gasUsage = Integer.parseInt(scanner.nextLine());
             TariffCalculator tariffCalculator =  new TariffCalculatorImpl();
             Map<Double,String> energyEstimationsPerTariffPlan = tariffCalculator.energyConsuptionEstimator(powerUsage,gasUsage);

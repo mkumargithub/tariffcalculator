@@ -1,0 +1,48 @@
+{
+  "tariff": {
+    "tariff_plans": [
+      {
+        "tariff_name": "tariff1",
+        "power_tariff": {
+            "fuel_type": "power",
+            "tariff_charges": 2.50,
+            "standing_charges": 20.00
+          },
+          "gas_tariff": {
+            "fuel_type": "gas",
+            "tariff_charges": 1.50,
+            "standing_charges": 10.00
+          }
+
+      },
+      {
+        "tariff_name": "tariff2",
+        "power_tariff": {
+          "fuel_type": "power",
+          "tariff_charges": 3.00,
+          "standing_charges": 15.00
+        },
+        "gas_tariff": {
+          "fuel_type": "gas",
+          "tariff_charges": 2.00,
+          "standing_charges": 25.00
+        }
+
+      },
+      {
+        "tariff_name": "tariff3",
+        "power_tariff": {
+          "fuel_type": "power",
+          "tariff_charges": 0.50,
+          "standing_charges": 2.00
+        },
+        "gas_tariff": {
+          "fuel_type": "gas",
+          "tariff_charges": 0.60,
+          "standing_charges": 5.00
+        }
+
+      }
+    ]
+  }
+}

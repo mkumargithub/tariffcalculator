@@ -73,7 +73,7 @@ public class TariffCalculatorImpl implements TariffCalculator{
         Map<String, Tariff> tariffs = new HashMap<>();
 
         try {
-            JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("../tariffcalculator/src/main/resources/prices.json"));
+            JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("prices.json"));
             JSONObject tariffJson = (JSONObject) jsonObject.get("tariff");
             JSONArray tariffsArray = (JSONArray) tariffJson.get("tariff_plans");
             for (int i = 0; i < tariffsArray.size(); i++) {

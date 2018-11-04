@@ -21,7 +21,7 @@ public class RunOvoTariff {
             Map<Double,String> energyEstimationsPerTariffPlan = tariffCalculator.energyConsuptionEstimator(powerUsage,gasUsage);
             System.out.println("Displaying the tariff charges per plan in ascending order.");
             for (Double estmatedTariffCharges : energyEstimationsPerTariffPlan.keySet()){
-                System.out.println("TARIFF_NAME : "+energyEstimationsPerTariffPlan.get(estmatedTariffCharges)+" COST : "+ String.format ("%.2f",estmatedTariffCharges));
+                System.out.println("TARIFF_NAME : "+energyEstimationsPerTariffPlan.get(estmatedTariffCharges)+" COST : "+ String.format ("%.2f", estmatedTariffCharges));
             }
             System.out.println("---------------------------- Command2----------------------------");
             System.out.println("Please Enter Fuel Type (EX: gas | power) : ");

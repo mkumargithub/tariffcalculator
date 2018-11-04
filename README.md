@@ -1,4 +1,4 @@
-# tariffcalculator
+# Tariff Calculator
 
 # Description:
 This is a small java project to claulate customer tariff uses in kWh 
